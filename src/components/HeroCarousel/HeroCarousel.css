@@ -1,0 +1,41 @@
+.hero { width: 100%; }
+.hero__notice { margin-top: 24px; margin-bottom: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #ffffff; padding: 14px 16px; border-radius: 16px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); }
+.hero__notice-left { display: flex; align-items: center; gap: 12px; }
+.hero__notice-icon { width: 28px; height: 28px; color: var(--color-secondary); }
+.hero__notice-texts { display: grid; gap: 2px; }
+.hero__notice-title { margin: 0; font-size: 16px; font-weight: 800; color: var(--color-text); font-family: 'Montserrat', sans-serif; }
+.hero__notice-sub { margin: 0; font-size: 13px; color: var(--color-muted); }
+.hero__notice-actions { display: flex; align-items: center; gap: 12px; }
+.hero__partners { display: flex; align-items: center; gap: 8px; }
+.hero__partner { display: inline-flex; align-items: center; padding: 8px 10px; border-radius: 999px; border: 1px solid var(--color-border); background: #fff; color: var(--color-text); font-weight: 700; font-size: 12px; text-decoration: none; }
+.hero__partner:hover { border-color: var(--color-primary); }
+.hero__carousel { position: relative; max-width: var(--container-max); margin: 0 auto; overflow: hidden; border-radius: 24px; box-shadow: var(--shadow-md); background: #ffffff; }
+.hero__wrap { display: grid; grid-template-columns: 1fr; align-items: center; gap: 16px; padding: 16px; background-image: url('./bghero.png'); background-size: cover; border-radius: 24px; box-shadow: var(--shadow-md); }
+@media (min-width: 1024px) { .hero__wrap { grid-template-columns: 1.1fr 1fr; padding: 24px; } }
+.hero__content { display: grid; gap: 10px; }
+.hero__badge { display: inline-block; font-weight: 800; font-size: 12px; letter-spacing: .2px; padding: 6px 10px; border: 1px solid rgb(227, 159, 0); border-radius: 999px; color: black; width: 15%; display:flex; justify-content: center; background: rgb(255, 165, 55);
+}
+.hero__headline { margin: 0; font-size: 28px; line-height: 1.2; font-weight: 800; font-family: 'Montserrat', sans-serif; color: white; }
+@media (min-width: 640px) { .hero__headline { font-size: 36px; } }
+.hero__sub { margin: 0; color: rgba(255, 255, 255, 0.827); }
+.hero__cta { display: flex; gap: 12px; }
+.hero__media { position: relative; }
+.hero__media-img { width: 100%; height: auto; border-radius: 16px; border-top-left-radius: 0; border-bottom-left-radius: 0; display: block; }
+@media (min-width: 1024px) { .hero__slide { grid-template-columns: 1fr 1fr; } }
+.hero__image { width: 100%; height: 100%; object-fit: cover; }
+.hero__bg { position: relative; display: none; }
+@media (min-width: 1024px) { .hero__bg { display: block; } }
+.hero__bg-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .4; mix-blend-mode: luminosity; }
+.hero__bg-glow { position: absolute; border-radius: 9999px; background: rgba(255,255,255,.1); filter: blur(32px); }
+.hero__bg-glow--bl { left: -40px; bottom: -40px; width: 420px; height: 420px; }
+.hero__bg-glow--tr { right: -40px; top: -40px; width: 520px; height: 520px; }
+.hero__controls { pointer-events: none; position: absolute; inset: 0; display: flex; align-items: center; justify-content: space-between; padding: 12px; }
+.hero__control { pointer-events: auto; display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border-radius: 999px; background: rgba(0,0,0,.3); color: #fff; backdrop-filter: blur(4px); border: 0; cursor: pointer; }
+.hero__control:hover { background: rgba(0,0,0,.4); }
+.hero__control-icon { width: 20px; height: 20px; }
+.hero__dots { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); }
+.hero__dots-inner { display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,.25); padding: 4px 8px; border-radius: 999px; backdrop-filter: blur(4px); }
+.hero__dot { width: 10px; height: 10px; border-radius: 999px; background: rgba(255,255,255,.6); transition: all .2s ease; border: 0; cursor: pointer; }
+.hero__dot.is-active { width: 24px; background: #fff; }
+
+

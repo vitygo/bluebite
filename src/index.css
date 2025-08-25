@@ -1,0 +1,45 @@
+:root {
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-primary: #1e3a8a; /* Blue Bite primary */
+  --color-primary-600: #1d4ed8;
+  --color-primary-50: #eff6ff;
+  --color-secondary: #e11d48; /* warm sauce red */
+  --color-accent: #f59e0b; /* saffron */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --container-max: 1200px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Harmonized warm gradients for sections */
+  --grad-warm-a: linear-gradient(135deg, #fff2e0 0%, #fde1c2 100%);
+  --grad-warm-b: linear-gradient(135deg, #fde1c2 0%, #fcd2a5 100%);
+  --grad-warm-c: linear-gradient(135deg, #fcd2a5 0%, #fbbf77 100%);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Rubik', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
