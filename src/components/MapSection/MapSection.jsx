@@ -3,7 +3,7 @@ import "./MapSection.css";
 
 export default function MapSection() {
   return (
-    <section className="map">
+    <section id='map' className="map">
       <div className="container">
         <div className="map__inner">
           <div className="map__info">
@@ -12,7 +12,7 @@ export default function MapSection() {
             <p className="map__hours">Pn-Cz: 10:00 – 22:00</p>
             <p className="map__hours">Pt-Sob: 10:00 – 23:00</p>
             <p className="map__hours">N: 11:00 – 22:00</p>
-            <a style={{width: "300px"}}className="button button--primary" href="#menu">Zamów na miejscu</a>
+            <a style={{width: "300px"}}className="button button--primary" href="#menu">Zamów z odbiorem</a>
           </div>
           <div className="map__embed">
             <iframe

@@ -1,0 +1,139 @@
+
+.cart-page {
+    max-width: 70%;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cart-page__cart {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    min-height: 450px;
+    width: 67%;
+  }
+  
+  .cart-page__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-page__empty {
+    padding: 1rem;
+    text-align: center;
+    color: #888;
+  }
+  
+  .cart-page__position-wrapper {
+    padding: 0.5rem 0;
+  }
+  
+  .cart-page__divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem 0;
+  }
+  
+  /* акордеон */
+  .cart-page__accordion {
+    max-height: 350px; /* приблизно під 3 товари */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .cart-page__accordion.open {
+    min-height: fit-content;
+  }
+  
+  .cart-page__top-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  
+  .cart__empty-cart-btn {
+    background-color: none;
+    color: rgba(0, 0, 0, 0.698);
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cart__empty-cart-btn:hover {
+    /* background-color: #c53030; */
+  }
+
+  
+
+  .cart-page__header {
+    display: flex;
+    justify-content: space-between; /* заголовок ліворуч, кнопка праворуч */
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-page__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cart__empty-cart-btn {
+    background-color: none;
+    color: rgba(0, 0, 0, 0.721);
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cart__empty-cart-btn:hover {
+    background-color: none;
+  }
+  
+
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .cart-page__cart {
+        width: 80%; /* ширше на ноутбуках */
+    }
+
+    .cart-page {
+        max-width: 85%; /* трохи ширший контейнер */
+    }
+}
+
+/* Для планшетів та маленьких екранів */
+@media (max-width: 768px) {
+    .cart-page {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .cart-page__cart {
+        width: 90%;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-page__cart {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .cart-page__title {
+        font-size: 1.2rem;
+    }
+}

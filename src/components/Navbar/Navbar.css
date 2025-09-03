@@ -19,7 +19,7 @@
 .header__inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
 .header__logo-img { height: 76px; width: auto; display: block; }
 .nav { display: flex; align-items: center; gap: 28px; }
-.nav__link { font-weight: 700; font-size: 14px; color: var(--color-text); text-decoration: none; opacity: .9; position: relative; }
+.nav__link { font-weight: 700; font-size: 14px; color: var(--color-text); text-decoration: none; opacity: .9; position: relative; cursor: pointer; }
 .nav__link::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 0; height: 2px; background: var(--color-primary); transition: width .2s ease; }
 .nav__link:hover::after { width: 100%; }
 .nav__link:hover { opacity: 1; }

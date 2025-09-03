@@ -1,7 +1,19 @@
 import React from "react";
 import "./DeliverySection.css";
+import { useNavigate } from "react-router-dom";
 
 export default function DeliverySection() {
+
+  const navigate = useNavigate();
+
+  const scrollToMenu = () => {
+    navigate("/"); // йдемо на головну
+    setTimeout(() => {
+      const menuSection = document.getElementById("menu");
+      if (menuSection) menuSection.scrollIntoView({ behavior: "smooth" });
+    }, 50); // невелика пауза, поки DOM завантажиться
+  };
+
   return (
     <section className="delivery">
       <div className="container">
@@ -20,7 +32,7 @@ export default function DeliverySection() {
             <div className="delivery__card">
               <h3 className="delivery__pickup-title">Odbiór w restauracji</h3>
               <p className="delivery__pickup-desc">Zamów telefonicznie i odbierz bez kolejki w BlueBite.</p>
-              <a className="button button--primary" href="#menu">Przejdź do menu</a>
+              <a className="button button--primary" onClick={scrollToMenu}>Przejdź do menu</a>
             </div>
           </div>
         </div>
