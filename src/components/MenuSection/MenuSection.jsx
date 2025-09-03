@@ -18,12 +18,12 @@ export default function MenuSection() {
     { id: "promocje", label: "PROMOCJE", icon: BadgePercent },
     { id: "pizza", label: "PIZZA", icon: Pizza },
     { id: "salatki", label: "SALATKI", icon: Soup },
-    { id: "zapiekanki", label: "ZAPIEKANKI", icon: Pizza },
-    { id: "przystawki", label: "PRZYSTAWKI", icon: Soup },
+    { id: "kebaby", label: "KEBABY", icon: Pizza },
+    { id: "SamoMięso", label: "Samo Mięso", icon: Soup },
     { id: "dodatki", label: "DODATKI", icon: Cake },
     { id: "napoje", label: "NAPOJE", icon: CupSoda },
     { id: "sosy", label: "SOSY", icon: Soup },
-    { id: "vegan", label: "VEGAN", icon: Leaf },
+    // { id: "vegan", label: "VEGAN", icon: Leaf },
   ]), []);
 
   const items = {
@@ -107,15 +107,25 @@ export default function MenuSection() {
       { id: 40, name: "Papadia vege", desc: "Papadia z warzywami i serem", price: 21.99, image: "./Ostra.PNG" },
       { id: 41, name: "Papadia BBQ", desc: "Papadia z sosem BBQ i bekonem", price: 23.99, image: "./Ostra.PNG" },
     ],
-    zapiekanki: [
-      { id: 42, name: "Zapiekanka klasyczna", desc: "Zapiekanka z pieczarkami i serem", price: 14.99, image: "./Ostra.PNG" },
-      { id: 43, name: "Zapiekanka z kurczakiem", desc: "Zapiekanka z kurczakiem i warzywami", price: 16.99, image: "./Ostra.PNG" },
-      { id: 44, name: "Zapiekanka wege", desc: "Zapiekanka z warzywami i sosem czosnkowym", price: 15.99, image: "./Ostra.PNG" },
+    kebaby: [
+      { id: 1, name: "Bite w Bułę", desc: "mięso 150g, bułka, pekinka, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru", price: 25, image: "./Ostra.PNG" },
+      { id: 2, name: "Mega Bułka", desc: "mięso 250g, bułka, pekinka, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru", price: 29, image: "./Ostra.PNG" },
+      { id: 3, name: "BlueNEO", desc: "mięso 250g, bułka neoprofitka, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, frytki", price: 29, image: "./Ostra.PNG" },
+      { id: 4, name: "Lawasz", desc: "mięso 150g, sałata lodowa, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, lawasz", price: 25, image: "./Ostra.PNG" },
+      { id: 5, name: "Mega lawasz", desc: "mięso 250g, sałata lodowa, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, lawasz", price: 29, image: "./Ostra.PNG" },
+      { id: 6, name: "Pita", desc: "mięso 150g, pekinka, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, pita", price: 25, image: "./Ostra.PNG" },
+      { id: 7, name: "Mega pita", desc: "mięso 250g, pekinka, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, pita", price: 29, image: "./Ostra.PNG" },
+      { id: 8, name: "Talerz", desc: "mięso 150g, sałata lodowa, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, frytki/ryż", price: 25, image: "./Ostra.PNG" },
+      { id: 9, name: "Mega talerz", desc: "mięso 250g, sałata lodowa, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, frytki/ryż", price: 29, image: "./Ostra.PNG" },
+      { id: 10, name: "BlueBox", desc: "mięso 150g, ser, cebula z pietruszką i sumakiem, pomidory, ogórek świeży, sosy do wyboru, frytki/ryż, opakowanie box", price: 25, image: "./Ostra.PNG" },
     ],
-    przystawki: [
-      { id: 45, name: "Frytki", desc: "Frytki z ketchupem", price: 9.99, image: "./Ostra.PNG" },
-      { id: 46, name: "Nuggetsy", desc: "Kurczak w panierce", price: 12.99, image: "./Ostra.PNG" },
-      { id: 47, name: "Koreczki", desc: "Mini koreczki z warzywami i serem", price: 13.50, image: "./Ostra.PNG" },
+    SamoMięso: [
+      { id: 11, name: "Bułka sam kurczak", desc: "mięso kurczak, sosy do wyboru, bułka", price: 28, image: "./Ostra.PNG" },
+      { id: 12, name: "Lawasz sam kurczak", desc: "mięso kurczak, sos, lawasz", price: 28, image: "./Ostra.PNG" },
+      { id: 13, name: "Pita sam kurczak", desc: "mięso kurczak, sos, pita", price: 28, image: "./Ostra.PNG" },
+      { id: 14, name: "Bułka sama wołowina", desc: "mięso wołowina, sos, bułka", price: 34, image: "./Ostra.PNG" },
+      { id: 15, name: "Lawasz sama wołowina", desc: "mięso wołowina, sos, lawasz", price: 34, image: "./Ostra.PNG" },
+      { id: 16, name: "Pita sama wołowina", desc: "mięso wołowina, sos, pita", price: 34, image: "./Ostra.PNG" },
     ],
     sosy: [
       { id: 48, name: "Sos czosnkowy", desc: "Delikatny sos czosnkowy", price: 3.99, image: "./Ostra.PNG" },
